@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KOLayer: Influence on the record</title>
+  <meta name="description" content="The transparency layer for KOL marketing. Every paid post on the record: who got paid, how much, and whether they're still holding.">
+  <meta property="og:title" content="KOLayer: Influence on the record">
+  <meta property="og:description" content="Every paid post on the record. Who got paid, how much, and whether they're still holding.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#050506">
+  <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="/" aria-label="KOLayer home">
+      <img src="/assets/mark.svg" alt="" width="30" height="30">
+      <span>KOLAYER</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#why">Why KOLayer</a>
+      <a href="#ledger">The Ledger</a>
+      <a href="#token">$KOL</a>
+      <a href="#how">How it works</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="ca-chip" data-copy-ca type="button" aria-label="Copy contract address">
+        <span class="ca-label">CA</span><span class="ca-value" data-ca-short>Launching soon</span>
+      </button>
+      <a class="icon-link" data-link="x" href="#" aria-label="KOLayer on X">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.77L17.75 3Zm-1.08 16.2h1.7L7.4 4.73H5.58L16.67 19.2Z"/></svg>
+      </a>
+      <a class="btn btn-solid btn-sm" data-link="bookCampaign" href="#">Book a campaign</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="kicker reveal">The transparency layer for KOL marketing</p>
+          <h1 class="reveal">KOLAYER</h1>
+          <p class="hero-sub reveal">
+            Every <em>paid post</em>, on the record.<br>
+            See who got paid, how much, and whether they're <em>still holding</em>.
+          </p>
+          <div class="hero-ctas reveal">
+            <a class="btn btn-solid" data-link="bookCampaign" href="#">Book a campaign</a>
+            <a class="btn btn-ghost" href="#ledger">View the ledger</a>
+          </div>
+        </div>
+
+        <div class="stack-wrap" aria-hidden="true">
+          <div class="stack" id="stack">
+            <div class="slab s1"><span>L1 / Signal</span></div>
+            <div class="slab s2"><span>L2 / Deal</span></div>
+            <div class="slab s3"><span>L3 / Wallet</span></div>
+            <div class="slab s4"><span>L4 / Proof</span></div>
+          </div>
+          <div class="stack-shadow"></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#why" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- WHY -->
+    <section class="section stone" id="why">
+      <div class="container">
+        <span class="rule"></span>
+        <h2 class="reveal">Influence, on the record</h2>
+        <div class="why-grid">
+          <article class="panel tilt reveal">
+            <p class="panel-kicker">KOL marketing runs in the dark.</p>
+            <p>Projects pay for posts. Followers never see the deal, the size, or the sell. <strong>The chart finds out last.</strong></p>
+          </article>
+          <article class="panel tilt reveal">
+            <p class="panel-kicker">KOLayer turns the lights on.</p>
+            <p>Every campaign we run is logged: who was paid, in what, on what vesting, from which wallet. <strong>Anyone can check if a caller is still in.</strong></p>
+          </article>
+        </div>
+        <p class="why-line reveal">Hire influence you can audit.</p>
+        <a class="btn btn-ghost reveal" data-link="bookCampaign" href="#">Grow now</a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section" id="stats">
+      <div class="container">
+        <span class="rule"></span>
+        <h2 class="reveal">The standard</h2>
+        <p class="section-sub reveal">What every KOLayer campaign commits to.</p>
+        <div class="stats" id="statsGrid"></div>
+        <div class="center"><a class="btn btn-ghost" data-link="joinRoster" href="#">Join the roster</a></div>
+      </div>
+    </section>
+
+    <!-- LEDGER -->
+    <section class="section stone" id="ledger">
+      <div class="container">
+        <span class="rule"></span>
+        <div class="ledger-head">
+          <div>
+            <h2 class="reveal">The ledger</h2>
+            <p class="section-sub reveal">Every deal. Every wallet. Every sell. <span class="sample-flag" id="sampleFlag" hidden>Sample data</span></p>
+          </div>
+          <div class="filters" role="tablist" aria-label="Filter ledger">
+            <button class="filter is-active" data-filter="all" type="button">All</button>
+            <button class="filter" data-filter="holding" type="button">Holding</button>
+            <button class="filter" data-filter="sold" type="button">Sold</button>
+          </div>
+        </div>
+        <div class="ledger panel" id="ledgerBox">
+          <div class="ledger-row ledger-th" aria-hidden="true">
+            <span>Date</span><span>Project</span><span>KOL</span><span>Paid</span><span>Vesting</span><span>Wallet</span><span>Status</span>
+          </div>
+          <div id="ledgerRows"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOKEN -->
+    <section class="section" id="token">
+      <div class="container">
+        <span class="rule"></span>
+        <h2 class="reveal">The $KOL token</h2>
+        <p class="section-sub reveal">Every campaign feeds the token. Every holder watches the room.</p>
+        <div class="token-grid">
+          <article class="panel tilt reveal util">
+            <span class="num">01</span>
+            <h3>Buyback &amp; burn</h3>
+            <p>Every campaign fee buys <b data-ticker>$KOL</b> off the market. <b data-burn-pct>50%</b> of it burns, from a public wallet.</p>
+          </article>
+          <article class="panel tilt reveal util">
+            <span class="num">02</span>
+            <h3>First look</h3>
+            <p>Hold <b data-ticker>$KOL</b> and get the ledger first. New deals and KOL sell alerts hit holders before they hit the site.</p>
+          </article>
+          <article class="panel tilt reveal util">
+            <span class="num">03</span>
+            <h3>You pick the roster</h3>
+            <p>Holders vote KOLs in and out every month. Callers who dump on their followers don't come back.</p>
+          </article>
+        </div>
+        <div class="burn-strip panel reveal">
+          <div><span class="burn-label">Buyback per fee</span><span class="burn-val" data-buyback-pct>50%</span></div>
+          <div><span class="burn-label">Burned from buybacks</span><span class="burn-val" data-burn-pct>50%</span></div>
+          <div><span class="burn-label"><span data-ticker>$KOL</span> burned to date</span><span class="burn-val" id="burned">Live at launch</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section class="section stone" id="how">
+      <div class="container">
+        <span class="rule"></span>
+        <h2 class="reveal">How it works</h2>
+        <div class="steps">
+          <article class="panel tilt step reveal"><span class="num">01</span><h3>Set your budget</h3><p>Pay in SOL or your token. Every payment is logged.</p></article>
+          <article class="panel tilt step reveal"><span class="num">02</span><h3>Pick your KOLs</h3><p>Choose from the roster and see each one's past deals, and whether they held.</p></article>
+          <article class="panel tilt step reveal"><span class="num">03</span><h3>They opt in</h3><p>KOLs only take projects they'll hold. Their vesting goes on the ledger.</p></article>
+          <article class="panel tilt step reveal"><span class="num">04</span><h3>It goes public</h3><p>Within 24 hours the deal is on the ledger, and the fee buys back <span data-ticker>$KOL</span>.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <img src="/assets/mark.svg" alt="" width="54" height="54">
+        <h2 class="reveal">Buy attention<br>you can verify.</h2>
+        <div class="hero-ctas">
+          <a class="btn btn-solid" data-link="bookCampaign" href="#">Book a campaign</a>
+          <a class="btn btn-ghost" data-link="joinRoster" href="#">Join the roster</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="26" height="26"><span>KOLAYER</span></a>
+      <p class="footer-tag">The transparency layer for KOL marketing.</p>
+      <div class="footer-links">
+        <a data-link="x" href="#">X</a>
+        <a data-link="telegram" href="#">Telegram</a>
+        <a data-link="dexscreener" href="#">DexScreener</a>
+        <a data-link="pumpfun" href="#">pump.fun</a>
+        <button class="ca-chip" data-copy-ca type="button"><span class="ca-label">CA</span><span class="ca-value" data-ca-short>Launching soon</span></button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/config.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
